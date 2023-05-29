@@ -1,17 +1,11 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { Stack } from './navigation/StackNavigator';
-import { screensNames } from './helpers/screensNames';
-import RegistrationScreen from './screens/RegistrationScreen';
-import LoginScreen from './screens/LoginScreen';
+import { NativeBaseProvider } from 'native-base';
+import { NavigationProvider } from './navigation/NavigationProvider';
 
 const App = () => {
-  return <NavigationContainer>
-    <Stack.Navigator initialRouteName={screensNames.registrationScreen}>
-      <Stack.Screen name={screensNames.registrationScreen} component={RegistrationScreen}/>
-      <Stack.Screen name={screensNames.loginScreen} component={LoginScreen}/>
-    </Stack.Navigator>
-  </NavigationContainer>
+  return <NativeBaseProvider>
+    <NavigationProvider/>
+  </NativeBaseProvider>
 }
 
 export default App;
