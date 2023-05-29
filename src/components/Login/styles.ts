@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Container = styled.View`
    flex-direction: column;
@@ -10,37 +10,35 @@ export const Top = styled.View`
     flex-direction: column;
     align-items: center;
     gap:25px;
-    flex:0.75;
-    background-color: white;
 `;
 
 export const Name = styled.Text`
     font-size: 30px;
-    color:black;
+    color: white;
 `;
 
 export const Input = styled.TextInput`
     height: 40px;
     width: 70%;
     font-size: 17px;
-    border: 1px solid black;
+    border: 1px solid white;
     color:white;
     border-radius: 5px;
     padding-left: 15px;
 `;
 
-export const SubmitButtonContainer = styled.Pressable`
+export const LoginButtonContainer = styled.Pressable`
     width: 30%;
     height: 40px;
     border-radius: 10px;
+background-color: white;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     align-items:center;
     justify-content: center;
-    background-color: #404040;
 `;
 
-export const SubmitButtonText = styled.Text`
-    font-size: 22px;
-    color:white;
+export const ButtonText = styled.Text`
+    font-size: 25px;
+    color:black;
 `;
 
 export const Title = styled.Text`
@@ -51,21 +49,22 @@ export const Title = styled.Text`
 `;
 
 export const Bottom = styled.View`
+    background-color: white;
     align-content: center;
     justify-content: space-between;
     padding: 15px 0;
-    height: 100%;
+    flex: 0.25;
 `;
 
 export const NoAccountNotification = styled.Text`
     font-size: 14px;
-    color: white;
+    color: black;
 `;
 
 export const RegistrationButtonContainer = styled.Pressable`
     width: 45%;
     height: 40px;
-    background-color: white;
+    background-color: rgba(60,60,60,1);
     border-radius: 25px;
     align-items: center;
     justify-content: center;
@@ -73,12 +72,13 @@ export const RegistrationButtonContainer = styled.Pressable`
 
 export const RegistrationText = styled.Text`
     font-size: 22px;
-    color: rgba(60,60,60,1);
+    color: #ffffff;
 `;
 
 export const RegistrationContainer = styled.View`
     align-items: center;
     gap: 5px;
+
 `;
 
 export const SocialsContainer = styled.View`
